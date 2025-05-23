@@ -16,7 +16,7 @@ A modern, high-performance React + Vite + TypeScript template for building scala
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [Node.js](https://nodejs.org/) (v22+ recommended)
 - [pnpm](https://pnpm.io/) (recommended)
 
 ### Installation
@@ -115,10 +115,6 @@ This repo uses Husky to enforce linting and formatting before commits. If you ha
 ```zsh
 pnpm prepare
 ```
-
-## Code of Conduct
-
-Please be respectful and follow our [Code of Conduct](CODE_OF_CONDUCT.md) (add this file if needed).
 
 ## License
 
