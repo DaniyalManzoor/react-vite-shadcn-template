@@ -1,54 +1,125 @@
-# React + TypeScript + Vite
+# Vite React Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance React + Vite + TypeScript template for building scalable web applications. This template is designed for rapid development, easy customization, and best practices out of the box.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ Lightning-fast development with Vite
+- 🧑‍💻 TypeScript support
+- 🎨 Tailwind CSS for utility-first styling
+- 🧩 Modular, reusable component structure
+- 🛠️ Linting and formatting with ESLint and Prettier
+- 🧪 Ready for testing and CI
+- 📦 Simple, extendable project structure
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [pnpm](https://pnpm.io/) (recommended)
+
+### Installation
+
+```zsh
+pnpm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development
 
-```js
-// eslint.config.js
-import reactDom from "eslint-plugin-react-dom";
-import reactX from "eslint-plugin-react-x";
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
+```zsh
+pnpm dev
 ```
+
+### Build
+
+```zsh
+pnpm build
+```
+
+### Lint & Format
+
+```zsh
+pnpm lint
+pnpm format
+```
+
+## Project Structure
+
+```
+vite-react-template/
+├── src/
+│   ├── components/
+│   │   └── ui/
+│   │       └── button.tsx
+│   ├── lib/
+│   │   └── utils.ts
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── public/
+│   └── vite.svg
+├── package.json
+├── vite.config.ts
+├── tsconfig.json
+└── ...
+```
+
+## Contributing
+
+We welcome contributions! Please follow these steps:
+
+### 1. Fork the repository
+
+Click the **Fork** button at the top right of this page.
+
+### 2. Clone your fork
+
+```zsh
+git clone https://github.com/your-username/vite-react-template.git
+cd vite-react-template
+pnpm install
+```
+
+### 3. Create a new branch
+
+```zsh
+git checkout -b feat/your-feature
+```
+
+### 4. Make your changes
+
+- Follow the existing code style.
+- Run `pnpm lint` and `pnpm format` before committing.
+
+### 5. Commit your changes
+
+We use [Conventional Commits](https://www.conventionalcommits.org/):
+
+```zsh
+git commit -m "feat(component): add new feature"
+```
+
+### 6. Push and open a Pull Request
+
+```zsh
+git push origin feat/your-feature
+```
+
+Open a Pull Request on GitHub and describe your changes.
+
+### 7. Pre-commit Hooks
+
+This repo uses Husky to enforce linting and formatting before commits. If you have issues, run:
+
+```zsh
+pnpm prepare
+```
+
+## Code of Conduct
+
+Please be respectful and follow our [Code of Conduct](CODE_OF_CONDUCT.md) (add this file if needed).
+
+## License
+
+MIT License
