@@ -1,0 +1,13 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔎 Checking commit message format..."
+pnpm commitlint --edit $1 || {
+    echo "❌ Commit message format is invalid."
+    echo "💡 Tip: Use 'pnpm commit' to create a proper commit message"
+    echo "📝 Format: <type>(<scope>): <description>"
+    echo "   Types: feat, fix, docs, style, refactor, perf, test, chore"
+    exit 1
+}
+
+echo "✅ Commit message format is valid!"

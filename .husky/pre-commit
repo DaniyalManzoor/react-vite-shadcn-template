@@ -1,0 +1,22 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🎯 Running Prettier format check..."
+pnpm format || {
+    echo "❌ Prettier check failed. Run 'pnpm format' to fix formatting issues."
+    exit 1
+}
+
+echo "🔍 Running ESLint check..."
+pnpm lint || {
+    echo "❌ ESLint check failed. Run 'pnpm lint' to see the issues."
+    exit 1
+}
+
+echo "✨ Running lint-staged checks..."
+pnpm pre-commit || {
+    echo "❌ Lint-staged checks failed."
+    exit 1
+}
+
+echo "✅ All pre-commit checks passed!"
