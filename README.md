@@ -2,6 +2,8 @@
 
 A modern, high-performance React + Vite + TypeScript template featuring [shadcn/ui](https://ui.shadcn.com/) components and Tailwind CSS. Designed for rapid development, easy customization, and best practices out of the box.
 
+**You can use this repository as a template for your own projects by clicking the "Use this template" button on GitHub.**
+
 ## Features
 
 - ⚡️ Lightning-fast development with Vite
