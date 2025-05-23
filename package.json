@@ -1,6 +1,6 @@
 {
-  "name": "real-time-trading-dashboard",
-  "description": "A real-time trading dashboard built with React and Vite.",
+  "name": "vite-react-template",
+  "description": "A modern, general-purpose React + Vite + TypeScript template.",
   "author": "github.com/daniyalmanzoor",
   "private": true,
   "version": "0.0.0",
