@@ -1,13 +1,13 @@
-# Vite React Template
+# React Vite Shadcn Template
 
-A modern, high-performance React + Vite + TypeScript template for building scalable web applications. This template is designed for rapid development, easy customization, and best practices out of the box.
+A modern, high-performance React + Vite + TypeScript template featuring [shadcn/ui](https://ui.shadcn.com/) components and Tailwind CSS. Designed for rapid development, easy customization, and best practices out of the box.
 
 ## Features
 
 - ⚡️ Lightning-fast development with Vite
 - 🧑‍💻 TypeScript support
 - 🎨 Tailwind CSS for utility-first styling
-- 🧩 Modular, reusable component structure
+- 🧩 [shadcn/ui](https://ui.shadcn.com/) component library
 - 🛠️ Linting and formatting with ESLint and Prettier
 - 🧪 Ready for testing and CI
 - 📦 Simple, extendable project structure
@@ -47,7 +47,7 @@ pnpm format
 ## Project Structure
 
 ```
-vite-react-template/
+react-vite-shadcn-template/
 ├── src/
 │   ├── components/
 │   │   └── ui/
@@ -76,8 +76,8 @@ Click the **Fork** button at the top right of this page.
 ### 2. Clone your fork
 
 ```zsh
-git clone https://github.com/your-username/vite-react-template.git
-cd vite-react-template
+git clone https://github.com/your-username/react-vite-shadcn-template.git
+cd react-vite-shadcn-template
 pnpm install
 ```
 
